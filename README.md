@@ -6,9 +6,7 @@ THIS IS A SIMPLE PUZZLE GAME.
 * GO TO THE GOAL.  
 
 ## WEB SITE
-PLAY THIS PAGE  
-
-*LINK : https://jpnykw.github.io/ICELE/*
+PLAY [THIS](https://jpnykw.github.io/ICELE/) PAGE  
 
 ## !IMPORTANT!
 ```
