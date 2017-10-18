@@ -160,8 +160,8 @@ function getCanPresser(id){
 // Draw screen methods
 
 function drawBall(x,y,w,h,size,bold,color){
-	x=(canv.width-w/2*size)+size/2+x*size;
-	y=(canv.width-h/2*size)+size/2+y*size;
+	x=(canv.width/2-w/2*size)+size/2+x*size;
+	y=(canv.width/2-h/2*size)+size/2+y*size;
 	drawDot(cont,x,y,bold,color);
 }
 
@@ -187,14 +187,14 @@ function drawStage(id,init){
 	}
 
 	cont.clearRect(0,0,canv.width,canv.height);
-	drawGrid(cont,canv.width,canv.width,sizeOfGird,width,height,3,'#BBB');
+	drawGrid(cont,canv.width/2,canv.width/2,sizeOfGird,width,height,3,'#BBB');
 	for(stix=0;stix<stage.length;stix++){
 		let $RG=(baseZero+stage[stix].toString(2)).slice(-1*width);
 		for(frlf=0;frlf<$RG.length;frlf++){
 			if(~~$RG.substr(frlf,1)){
 				drawFillBox(cont,
-				(canv.width-(width/2*sizeOfGird))+frlf*sizeOfGird+(sizeOfGird/2),
-				(canv.width-(height/2*sizeOfGird))+stix*sizeOfGird+(sizeOfGird/2),
+				(canv.width/2-(width/2*sizeOfGird))+frlf*sizeOfGird+(sizeOfGird/2),
+				(canv.width/2-(height/2*sizeOfGird))+stix*sizeOfGird+(sizeOfGird/2),
 				sizeOfGird,'#BBB');
 
 			}
