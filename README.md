@@ -1,1 +1,7 @@
 # ICELE
+
+## HOW TO PLAY
+```
+  USE ARROW KEYS ONLY.
+  GO TO THE GOAL.
+```
