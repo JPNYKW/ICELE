@@ -24,8 +24,8 @@ window.onload=()=>{
 	canv=$D.getElementById('game');
 	cont=canv.getContext('2d');
 	
-	canv.width=640;
-	canv.height=640;
+	canv.width=600;
+	canv.height=600;
 	canv.style.backgroundColor='#3A3A3A';
 
 	init();
@@ -127,7 +127,7 @@ function init(){
 	stageSizeData=[[5,5],[7,7],[14,14]];
 	ballPosData=[[4,4],[2,2],[5,3]];
 	goalPos=[[1,3],[1,3],[13,2]];
-	stagePx=[64,64,40];
+	stagePx=[54,54,30];
 
 	sizeOfGird=64;
 	goal=false;
