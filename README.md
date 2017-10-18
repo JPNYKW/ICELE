@@ -1,4 +1,6 @@
 # ICELE
+THIS IS A SIMPLE  
+PUZZLE GAME.  
 
 ## HOW TO PLAY
 ```
