@@ -20,5 +20,5 @@ Beta version.
 
 ## Update log
 
-v 1.1 Changed CSS-design of web page
+v 1.1 Changed CSS-design of web page　　
 v 1.0 shared beta version 
