@@ -17,3 +17,7 @@ Beta version.
 * Only 3 stages  
 * Only ez stages  
 * No se and bgm  
+
+## Update log
+
+v 1.0 shared beta version 
