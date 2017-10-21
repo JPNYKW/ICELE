@@ -65,9 +65,10 @@ window.onload=()=>{ // ページがロードされたら実行する
 		}
 		
 		if(keyPrs[0]){ // 左が押されているときの処理
-			if(!getPosData(ball.x-1,ball.y)){
-				ball.x--;
+			if(!getPosData(~~ball.x-1,ball.y)){
+				ball.x-=0.5;
 			}else{
+				ball.x=~~ball.x;
 				if(getPosData(ball.x-1,ball.y)>1){
 					goal=true;
 				}else{
@@ -78,9 +79,10 @@ window.onload=()=>{ // ページがロードされたら実行する
 		}
 
 		if(keyPrs[1]){ // 右が押されているときの処理
-			if(!getPosData(ball.x+1,ball.y)){
-				ball.x++;
+			if(!getPosData(~~ball.x+1,ball.y)){
+				ball.x+=0.5;
 			}else{
+				ball.x=~~ball.x;
 				if(getPosData(ball.x+1,ball.y)>1){
 					goal=true;
 				}else{
@@ -91,9 +93,10 @@ window.onload=()=>{ // ページがロードされたら実行する
 		}
 
 		if(keyPrs[2]){ // 下が押されているときの処理
-			if(!getPosData(ball.x,ball.y+1)){
-				ball.y++;
+			if(!getPosData(ball.x,~~ball.y+1)){
+				ball.y+=0.5;
 			}else{
+				ball.y=~~ball.y;
 				if(getPosData(ball.x,ball.y+1)>1){
 					goal=true;
 				}else{
@@ -104,9 +107,10 @@ window.onload=()=>{ // ページがロードされたら実行する
 		}
 
 		if(keyPrs[3]){　// 上が押されているときの処理
-			if(!getPosData(ball.x,ball.y-1)){
-				ball.y--;
+			if(!getPosData(ball.x,~~ball.y-1)){
+				ball.y-=0.5;
 			}else{
+				ball.y=~~ball.y;
 				if(getPosData(ball.x,ball.y-1)>1){
 					goal=true;
 				}else{
